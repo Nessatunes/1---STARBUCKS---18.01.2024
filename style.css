@@ -4,89 +4,116 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
-    padding-top: 20px; /* adiciona espaçamento */
+    padding-top: 20px;
+    /* adiciona espaçamento */
     padding-right: 100px;
     padding-left: 100px;
 }
+
 .conteudo {
-    width: 100%; /* largura */
+    width: 100%;
+    /* largura */
     display: flex;
-    justify-content: space-between; /* adiciona espaço entre os itens */
-    align-items: center; /* alinha  tudo ao centro */
+    justify-content: space-between;
+    /* adiciona espaço entre os itens */
+    align-items: center;
+    /* alinha  tudo ao centro */
 }
+
 .caixa-main {
     width: 500px;
 }
+
 .caixa-imagem {
     width: 500%;
     max-width: 500px;
     display: flex;
-    justify-content: flex-end;/* joga item todo pro lado */
+    justify-content: flex-end;
+    /* joga item todo pro lado */
     margin-top: 250px;
 }
-.menu-principal{
+
+.menu-principal {
     margin: 100px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
+
 h2 {
     font-size: 60px;
     font-weight: 500;
 }
+
 span {
     color: #017143;
-    font-size: 70px;  /* muda tamanho do texto */
-    font-weight: 900; /* muda a grossura do texto */
+    font-size: 70px;
+    /* muda tamanho do texto */
+    font-weight: 900;
+    /* muda a grossura do texto */
 }
+
 p {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 button {
-    background-color: #017143;/* cor de fundo */
-    color: #ffffff;/* cor do texto */
-    border: none;/* borda */
+    background-color: #017143;
+    /* cor de fundo */
+    color: #ffffff;
+    /* cor do texto */
+    border: none;
+    /* borda */
     cursor: pointer;
     padding: 10px;
     border-radius: 20px;
 }
+
 .logo {
     width: 80px;
 }
+
 .starbucks {
-    width: 200%;
-    margin: 0 auto;
-   }
-.copo-peq-verde{
-    width: 90px;
-    transition: 1s;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px;  
-    }
-.copo-peq-amarelo{
-    width: 90px;
-    transition: 1s;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px;  
+    width: 250%;
+
 }
-.copo-peq-rosa{
+
+.copo-peq-verde {
     width: 90px;
     transition: 1s;
     cursor: pointer;
     margin: 10px;
-    padding: 10px;  
+    padding: 10px;
 }
-.copo-peq-verde:hover{
+
+.copo-peq-amarelo {
+    width: 90px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.copo-peq-rosa {
+    width: 90px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.copo-peq-verde:hover {
     transform: translateY(-35px);
 }
-.copo-peq-amarelo:hover{
+
+.copo-peq-amarelo:hover {
     transform: translateY(-35px);
 }
-.copo-peq-rosa:hover{
+
+.copo-peq-rosa:hover {
     transform: translateY(-35px);
 }
 
@@ -94,47 +121,47 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #017143; 
+    background: #017143;
     top: 0;
     left: 0;
     clip-path: circle(600px at right 800px);
-    z-index: -1;  /* define se o item está a frente ou atrás */
+    z-index: -1;
+    /* define se o item está a frente ou atrás */
 }
 
 @media screen and (max-width: 360px) {
 
-    body{
+    body {
         flex-wrap: wrap;
-       padding: 5%;
+        padding: 5%;
     }
+
     h2 {
-        font-size: 10px;      
+        font-size: 10px;
     }
+
     span {
         color: #017143;
-        font-size: 60px;  /* muda tamanho do texto */        
+        font-size: 60px;
+        /* muda tamanho do texto */
     }
+
     p {
         font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 30px;    
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
-    .circulo {
-        /*margin-top: 20px;*/
-        margin: 0 auto; 
-        width: 100%;
-        height: 100%;
+
+    .starbucks {
         display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 0;            
+        width: 60px;
+        z-index: 2;
+        max-width: 340px;
+       
     }
-   .starbucks {
-    display:flex;
-    width: 60px;
-    z-index: 2;  
-    max-width: 340px; 
-    margin: 0 auto;   
-    flex-wrap: wrap;
-   }       
+    .copo-pequeno{
+        margin-bottom: 0;
+        width: 20px;
+        max-width: 60px;
+    }
 }
