@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Starbucks</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="circulo"></div>
 
-    <img src="./assets/logo.png" alt="logo starbucks" class="logo">
+    <img src="./assets/logo.png" alt="logo starbucks" class="logo" />
 
     <div class="conteudo">
-        <main class="main">
-            <h2> Não é apenas Café, é um <span>Starbucks</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti odit aperiam illum odio
-                voluptatum ea nisi iure vero. Neque tempore sequi nisi, enim vel omnis cumque delectus odit.</p>
-            <button>Deixe o seu LIKE</button>      
-
-        </main>
-        <section class="caixa-imagem">
-            <img src="./assets/img1.png" alt="copo-starbucks" class="starbucks">
-        </section>
-
-        
+      <main class="main">
+        <h2>Não é apenas Café, é um <span>Starbucks</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum
+          corrupti odit aperiam illum odio voluptatum ea nisi iure vero. Neque
+          tempore sequi nisi, enim vel omnis cumque delectus odit.
+        </p>
+        <button>Deixe o seu LIKE</button>
+      </main>
+      <section class="caixa-imagem">
+        <img src="./assets/img1.png" alt="copo-starbucks" class="starbucks" />
+      </section>
     </div>
     <section class="menu-principal">
+      <img
+        src="./assets/img-pequena1.png"
+        alt="bebida1"
+        class="copo-peq-verde"
+        onclick="trocaImagem('./assets/img1.png', '#017143')"
+      />
 
-        <img src="./assets/img-pequena1.png" alt="bebida1" class="copo-peq-verde"
-             onclick="trocaImagem('./assets/img1.png', '#017143')">
-      
-        <img src="./assets/img-pequena2.png" alt="bebida2" class="copo-peq-amarelo"
-             onclick="trocaImagem('./assets/img2.png', '#eb7495')">
-      
-        <img src="./assets/img-pequena3.png" alt="bebida3" class="copo-peq-rosa"
-             onclick="trocaImagem('./assets/img3.png', '#d752b1')">
-      </section> 
+      <img
+        src="./assets/img-pequena2.png"
+        alt="bebida2"
+        class="copo-peq-amarelo"
+        onclick="trocaImagem('./assets/img2.png', '#eb7495')"
+      />
 
-      <script src="./script.js"></script>
-   
-</body>
+      <img
+        src="./assets/img-pequena3.png"
+        alt="bebida3"
+        class="copo-peq-rosa"
+        onclick="trocaImagem('./assets/img3.png', '#d752b1')"
+      />
+    </section>
 
-
+    <script src="./script.js"></script>
+  </body>
 </html>
